@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  resources :instructors do
-    resources :students
-  end
+  get 'students/index'
+  get 'students/show'
+  get 'students/create'
+  get 'students/update'
+  get 'students/destroy'
+  resources :instructors 
+  resources :students
+  
 end
