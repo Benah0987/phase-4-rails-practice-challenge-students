@@ -50,4 +50,11 @@ def destroy
   end
 end
 
+private
+
+def student_params
+  params.permit(:name, :major, :age)
+end
+
+
 end
